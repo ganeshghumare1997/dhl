@@ -1,0 +1,52 @@
+.hero {
+  position: relative;
+  text-align: center;
+  background: transparent;
+  overflow: hidden;
+}
+
+.textTop,
+.textBottom {
+  font-family: 'Bayon';
+  font-size: 200px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: linear-gradient(
+    to bottom,
+    #FFFFFF 0%,
+    #FFFFFF 50%,
+    #FFFFFF 54%,
+    #FFFFFF 100%
+  );
+  background-blend-mode: overlay;
+  z-index: 3;
+  -webkit-text-stroke: 3px #DDDDDD;
+  text-stroke: 3px #DDDDDD;
+  color: black;
+  background: url("../../assets//images/DHLVan.png") no-repeat center/cover;
+  -webkit-background-clip: text;
+  background-clip: text; 
+}
+
+.textTop {
+    position: relative;
+    top: 100px;
+    background: transparent;
+}
+
+.textBottom {
+  position: relative;
+  top: -100px;
+  background: transparent;
+}
+
+.van {
+  max-width: 500px;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
