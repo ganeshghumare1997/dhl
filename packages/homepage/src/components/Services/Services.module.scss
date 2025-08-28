@@ -1,0 +1,89 @@
+// Brand colors
+$brand-yellow: #FFCC01;
+$brand-yellow-dark: #FAC12F;
+$brand-red: #D40511;
+$brand-gray-dark: #1F1F1F;
+$brand-gray-medium: #434343;
+$brand-gray-light: #737373;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Services Section
+.services {
+  padding: 4rem 0;
+
+  .content {
+    margin: 0 auto;
+
+    .topGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      @media (min-width: $breakpoint-lg) {
+        grid-template-columns: 1.5fr 1fr;
+      }
+
+      .leftColumn {
+        .servicesHeading {
+          font-family: 'Bayon', sans-serif;
+          font-size: 3.75rem;
+          color: $brand-gray-dark;
+          line-height: 1.3;
+          margin-bottom: 1rem;
+          max-width: 50%;
+
+          @media (min-width: $breakpoint-md) {
+            font-size: 4.5rem;
+          }
+        }
+
+        .badge {
+          color: white;
+          background-color: $brand-yellow-dark;
+          padding: 0.5rem 1.5rem;
+          font-size: 1.125rem;
+          display: inline-block;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .rightColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .description {
+          font-size: 1.25rem;
+          color: $brand-gray-medium;
+          line-height: 1.6;
+          margin-bottom: 1.5rem;
+        }
+
+        .viewAllBtn {
+          background-color: $brand-yellow-dark;
+          color: $brand-gray-dark;
+          padding: 0.75rem 1.5rem;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          align-self: flex-start;
+
+          .icon {
+            width: 1rem;
+            height: 1rem;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
