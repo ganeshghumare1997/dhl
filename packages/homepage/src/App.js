@@ -5,10 +5,12 @@ import { Switch, Route, Router } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage';
 import ShopNowPage from './pages/ShopNowPage';
+import Header from './components/Header/Header';
 
 export default ({ history }) => {
     return (
         <div>
+            <Header />
             <Router history={history}>
                 <Switch>
                     <Route exact path="/shopnow" component={ShopNowPage} />

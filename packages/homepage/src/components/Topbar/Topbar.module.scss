@@ -1,0 +1,33 @@
+.topBar {
+  background-color: #ffcc00;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 80px;
+  border-bottom: 1px solid #cfa600;
+  font-size: 14px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+  cursor: pointer;
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  font-size: 14px;
+}
