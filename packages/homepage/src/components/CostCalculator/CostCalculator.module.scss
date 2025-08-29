@@ -1,0 +1,186 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #FDF6E6;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.steps {
+  flex: 1;
+  margin-right: 30px;
+
+  h2 {
+    font-family: 'Bayon';
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 66px;
+    letter-spacing: -2%;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      .checkmark {
+        height: 24px;
+        width: 24px;
+        background-color: #ffcc00;
+        font-size: 18px;
+      }
+
+      .itemHeading {
+        font-family: 'Inter';
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        font-weight: 600;
+        color: #434343;
+      }
+
+      p {
+        font-family: 'Inter';
+        font-size: 18px;
+        margin-top: 5px;
+        color: #434343;
+        line-height: 30px;
+        letter-spacing: 0%;
+      }
+    }
+  }
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  h3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -2%;
+
+  }
+
+  .shippingMethod {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    button {
+        width: 189px;
+        height: 62px;
+        angle: 0 deg;
+        opacity: 1;
+        top: 1565px;
+        left: 741px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: #000000;
+
+      &.active {
+        background-color:#FAC12F;
+        color: #000000;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .formGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    label {
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -2%;
+        color: #000000;
+    }
+
+    select,
+    input {
+      width: 178px;
+      height: 53px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #000000;
+      opacity: 50%;
+    }
+
+    input[type='text'] {
+      margin-bottom: 10px;
+    }
+  }
+
+  .dimensionFields {
+    display: flex;
+    gap: 10px;
+
+    input, select {
+      width: 30%;
+    }
+  }
+
+  .locationFields {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    > * {
+        flex: 1;
+        width: 258px;
+
+        input, select {
+            width: 100%;
+        }
+    }
+  }
+
+  .estimateButton {
+    width: 201px;
+    height: 60px;
+    angle: 0 deg;
+    opacity: 1;
+    top: 2184px;
+    left: 741px;
+    background-color: #FAC12F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 8px;
+    
+    path {
+        fill: #000000;
+    }
+  }
+}
