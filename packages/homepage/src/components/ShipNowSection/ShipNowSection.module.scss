@@ -1,0 +1,197 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  padding: 80px;
+}
+
+.left {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  h1 {
+    font-family: Bayon;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 80px;
+    leading-trim: NONE;
+    line-height: 78px;
+    letter-spacing: -2%;
+  }
+
+  p {
+    font-family: Inter;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 30px;
+    letter-spacing: 0%;
+  }
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+.card {
+    width: 560px;
+    height: 617px;
+    angle: -0 deg;
+    opacity: 1;
+    top: 204px;
+    left: 802px;
+    border-width: 1px;
+
+    background: linear-gradient(85.23deg, rgba(255, 54, 54, 0.28) 12.37%, rgba(67, 0, 0, 0.049) 82.72%);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid;
+
+    border-image-source: linear-gradient(155.31deg, rgba(255, 255, 255, 0.5) 12.33%, rgba(255, 255, 255, 0) 34.31%, rgba(255, 255, 255, 0) 52.66%, rgba(255, 255, 255, 0.54) 74.67%),
+    linear-gradient(155.31deg, rgba(255, 255, 255, 0.5) 12.33%, rgba(255, 255, 255, 0) 34.31%, rgba(255, 255, 255, 0) 52.66%, rgba(255, 255, 255, 0.54) 74.67%);
+    backdrop-filter: blur(70px);
+
+    box-shadow: 0px 1.2px 29.92px 0px #452A7C1A;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    button {
+      background: transparent;
+      border: none;
+      color: #885502;
+      font-weight: bold;
+      padding: 10px 0;
+      border-bottom: 2px solid transparent;
+      flex: 1;
+
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+
+
+      &.active {
+        color: white;
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+
+  .formGroup {
+    text-align: left;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    label {
+      font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .dropdown {
+        width: 491px;
+        height: 85px;
+        angle: -0 deg;
+        opacity: 1;
+        border-width: 1px;
+
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .dropdownOption {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+        img {
+            width: 44px;
+            height: 31px;
+        }
+      }
+    }
+
+    small {
+      font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    input {
+      margin-right: 10px;
+    }
+
+    label {
+      font-size: 14px;
+    }
+  }
+
+  .submitBtn {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+
+    span {
+      float: right;
+    }
+
+    &:hover {
+      background: #f0f0f0;
+    }
+  }
+}
